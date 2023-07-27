@@ -11,9 +11,9 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "rules_clojure",
-    sha256 = "c841fbf94af331f0f8f02de788ca9981d7c73a10cec798d3be0dd4f79d1d627d",
-    strip_prefix = "rules_clojure-c044cb8608a2c3180cbfee89e66bbeb604afb146",
-    urls = ["https://github.com/simuons/rules_clojure/archive/c044cb8608a2c3180cbfee89e66bbeb604afb146.tar.gz"],
+    sha256 = "64dbe5da9a1a96a0d0919e4be108d8ae1e0971abc73e9c4f384c53a9ff880569",
+    strip_prefix = "rules_clojure-b7cb2639bcd5e9efcb6d6f6a4f9211fa68cf00a7",
+    urls = ["https://github.com/aaylward/rules_clojure/archive/b7cb2639bcd5e9efcb6d6f6a4f9211fa68cf00a7.tar.gz"],
 )
 
 load("@rules_clojure//:repositories.bzl", "rules_clojure_dependencies", "rules_clojure_toolchains")
@@ -41,7 +41,7 @@ Rules require `clojure.jar` in implicit classpath via toolchains.
 
 Defaults are loaded with `rules_clojure_dependencies` from [@rules_clojure//:repositories.bzl](repositories.bzl) using `jvm_maven_import_external`.
 
-Please see [example](examples/setup/custom) of dependencies loaded with `rules_jvm_external`. 
+Please see [example](examples/setup/custom) of dependencies loaded with `rules_jvm_external`.
 
 ## Toolchains
 
